@@ -2,7 +2,9 @@
 
 @section('content')
 
-
+@section('header')
+@include('partials.otherHeader')
+@endsection
     <!--=====================================-->
     <!--=   Breadcrumb     Start            =-->
     <!--=====================================-->
@@ -12,7 +14,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About Usx</li>
+                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
                     </ol>
                 </nav>
             </div>

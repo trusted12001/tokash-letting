@@ -8,7 +8,7 @@
             <div class="row d-flex align-items-center">
                 <div class="col-xl-2 col-lg-2">
                     <div class="logo-area">
-                        <a href="index.html" class="temp-logo">
+                        <a href="{{ route('home') }}" class="temp-logo">
                             <img src="{{ asset('assets/img/logo.jpeg') }}" width="157" height="40" alt="logo" class="img-fluid">
                         </a>
                     </div>
@@ -17,10 +17,10 @@
                     <nav id="dropdown" class="template-main-menu template-main-menu-3">
                         <ul>
                             <li>
-                                <a href="index.html" class="active">Home</a>
+                                <a href="{{ route('home') }}" class="active">Home</a>
                             </li>
                             <li>
-                                <a href="about-1.html">About</a>
+                                <a href="{{ route('about') }}">About</a>
                             </li>
                             <li>
                                 <a href="with-sidebar2.html">Property</a>
