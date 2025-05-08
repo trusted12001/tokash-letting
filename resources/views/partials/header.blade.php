@@ -17,10 +17,10 @@
                     <nav id="dropdown" class="template-main-menu">
                         <ul>
                             <li>
-                                <a href="index.html" class="active">Home</a>
+                                <a href="{{ route('home') }}" class="active">Home</a>
                             </li>
                             <li>
-                                <a href="about-1.html">About</a>
+                                <a href="{{ route('about') }}">About</a>
                             </li>
                             <li>
                                 <a href="with-sidebar2.html">Property</a>
