@@ -1,50 +1,81 @@
-<header class="main-header">
-    <div class="d-flex align-items-center logo-box justify-content-start d-md-none d-block">
-      <!-- Logo -->
-      <a href="{{ route('dashboard') }}" class="logo">
-        <div class="logo-mini w-30">
-          <span class="light-logo">
-            <img src="{{ asset('images/logo-letter.png') }}" alt="logo">
-          </span>
-          <span class="dark-logo">
-            <img src="{{ asset('images/logo-letter-white.png') }}" alt="logo">
-          </span>
+<!-- Header Area -->
+
+
+<header class="header">
+    <div id="rt-sticky-placeholder"></div>
+    <div id="header-menu" class="header-menu menu-layout1">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-xl-2 col-lg-2">
+                    <div class="logo-area">
+                        <a href="index.html" class="temp-logo">
+                            <img src="{{ asset('assets/img/logo_light.png') }}" width="157" height="40" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-flex justify-content-center position-static">
+                    <nav id="dropdown" class="template-main-menu">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="active">Home</a>
+                            </li>
+                            <li>
+                                <a href="about-1.html">About</a>
+                            </li>
+                            <li>
+                                <a href="with-sidebar2.html">Property</a>
+                            </li>
+                            <li>
+                                <a href="agent-lists1.html">Agents</a>
+                            </li>
+
+                            <li class="hide-on-desktop-menu">
+                                <a href="index.html">Pages</a>
+                                <ul>
+                                    <li>
+                                        <a href="about-1.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="with-sidebar2.html">Property</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog1.html">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="404.html">404 Error</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact page</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-4 col-lg-4 d-flex justify-content-end">
+                    <div class="header-action-layout1">
+                        <ul class="action-list">
+                            <li class="action-item-style my-account">
+                                <a href="account.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    title="Sign In">
+                                    <i class="flaticon-user-1"></i>
+                                </a>
+                            </li>
+                            <li class="listing-button">
+                                <a href="post-add.html" class="listing-btn">
+                                    <span>
+                                        <i class="fas fa-plus-circle"></i>
+                                    </span>
+                                    <span class="item-text">Add Property</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="logo-lg">
-          <span class="light-logo">
-            <img src="{{ asset('images/logo-dark-text.png') }}" alt="logo">
-          </span>
-          <span class="dark-logo">
-            <img src="{{ asset('images/logo-light-text.png') }}" alt="logo">
-          </span>
-        </div>
-      </a>
     </div>
-    <!-- Header Navbar -->
-    <nav class="navbar navbar-static-top">
-      <!-- Sidebar toggle button -->
-      <div class="app-menu">
-        <ul class="header-megamenu nav">
-          <li class="btn-group nav-item">
-            <a href="#" class="waves-effect waves-light nav-link push-btn btn-primary-light" data-toggle="push-menu" role="button">
-              <i class="icon-Menu"><span class="path1"></span><span class="path2"></span></i>
-            </a>
-          </li>
-          <!-- ... include other navbar items, updating paths as needed ... -->
-        </ul>
-      </div>
-      <div class="navbar-custom-menu r-side">
-        <ul class="nav navbar-nav">
-          <!-- Example notification item -->
-          <li class="dropdown notifications-menu btn-group nav-item">
-            <a href="#" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon" data-bs-toggle="dropdown" title="Notifications">
-              <i class="icon-Notifications"><span class="path1"></span><span class="path2"></span></i>
-              <div class="pulse-wave"></div>
-            </a>
-            <!-- Dropdown content goes here -->
-          </li>
-          <!-- Continue with other header items -->
-        </ul>
-      </div>
-    </nav>
-  </header>
+</header>
