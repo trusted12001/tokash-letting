@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon Start Here -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon-homlisti.svg') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/jquery-ui.css') }}">
     <!-- Bootstrap Css Start Here -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
