@@ -1,26 +1,26 @@
 <!-- Header Area -->
 
 
-<header class="header">
-    <div id="rt-sticky-placeholder"></div>
-    <div id="header-menu" class="header-menu menu-layout1">
+<header class="rt-header sticky-on">
+    <div id="sticky-placeholder"></div>
+    <div id="navbar-wrap" class="header-menu menu-layout1 header-menu menu-layout2">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-xl-2 col-lg-2">
                     <div class="logo-area">
                         <a href="index.html" class="temp-logo">
-                            <img src="{{ asset('assets/img/logo_light.png') }}" width="157" height="40" alt="logo" class="img-fluid">
+                            <img src="{{ asset('assets/img/logo.jpeg') }}" width="157" height="40" alt="logo" class="img-fluid">
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 d-flex justify-content-center position-static">
-                    <nav id="dropdown" class="template-main-menu">
+                    <nav id="dropdown" class="template-main-menu template-main-menu-3">
                         <ul>
                             <li>
-                                <a href="{{ route('home') }}" class="active">Home</a>
+                                <a href="index.html" class="active">Home</a>
                             </li>
                             <li>
-                                <a href="{{ route('about') }}">About</a>
+                                <a href="about-1.html">About</a>
                             </li>
                             <li>
                                 <a href="with-sidebar2.html">Property</a>
