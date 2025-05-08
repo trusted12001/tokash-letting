@@ -60,7 +60,11 @@
     <!--=====================================-->
     <!-- Header -->
 
-    @include('partials.header')
+    @hasSection('header')
+    @yield('header')
+    @else
+        @include('partials.header')
+    @endif
 
     <!-- Main Content -->
     <main>
