@@ -654,7 +654,7 @@
                     </div>
                     <div class="play-button">
                         <div class="item-icon">
-                            <a href="https://youtube.com/shorts/SYW2edaAJio?feature=share" class="play-btn play-btn-big">
+                            <a href="https://www.youtube.com/shorts/SYW2edaAJio" class="play-btn play-btn-big">
                                 <span class="play-icon style-2">
                                     <i class="fas fa-play"></i>
                                 </span>
