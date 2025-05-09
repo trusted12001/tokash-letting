@@ -38,10 +38,10 @@
                             <h3 class="contact-title">Office Information</h3>
                             <div class="contact-list">
                                 <ul>
-                                    <li>TOKASH & ASSOCIATES LTD</li>
-                                    <li>BLOCKE, FLAT1, NCAAQUARTERS, NAIA</li>
-                                    <li>ABUJA,FCT</li>
-                                    <li>ABUJA</li>
+                                    <li>Tokash & Associates Ltd.</li>
+                                    <li>Block, Flat 1, NCAA Quraters, NAIA</li>
+                                    <li>Abuja, FCT</li>
+                                    <li>Abuja</li>
                                 </ul>
                             </div>
                             <div class="phone-box">
@@ -74,7 +74,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="contact-box2">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d116878.45300534296!2d90.4195470442074!3d23.731268144494663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1635221509729!5m2!1sen!2sbd" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5088.270389800074!2d7.2668153656202525!3d9.006363608210444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e71006052cff7%3A0x37e1444c4cb76c79!2sNCAA%20Abuja%20regional%20office!5e0!3m2!1sen!2sng!4v1746798985580!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="contact-content">
                             <h3 class="contact-title">Quick Contact</h3>
                             <p>Borem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod 
