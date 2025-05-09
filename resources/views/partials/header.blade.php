@@ -8,7 +8,7 @@
             <div class="row d-flex align-items-center">
                 <div class="col-xl-2 col-lg-2">
                     <div class="logo-area">
-                        <a href="index.html" class="temp-logo">
+                        <a href="{{ route('home') }}" class="temp-logo">
                             <img src="{{ asset('assets/img/logo_light.png') }}" width="157" height="40" alt="logo" class="img-fluid">
                         </a>
                     </div>
@@ -79,3 +79,57 @@
         </div>
     </div>
 </header>
+<div
+            class="rt-header-menu mean-container position-relative"
+            id="meanmenu">
+            <div class="mean-bar">
+                <a href="{{ route('home') }}">
+                    <img src='{{ asset("assets/img/logo_light.png") }}' alt='logo' class='img-fluid'/>
+                </a>
+                <div class="mean-bar--right">
+                    <div class="actions search">
+                        <a href="#template-search" class="item-icon" title="Search">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    <div class="actions user">
+                        <a href="{{ route('home') }}"><i class="flaticon-user"></i></a>
+                    </div>
+                    <span class="sidebarBtn">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="rt-slide-nav">
+                <div class="offscreen-navigation">
+                    <nav class="menu-main-primary-container">
+                        <ul class="menu">
+                            <li class="list menu-item-parent">
+                                <a class="animation" href="{{ route('home') }}">Home</a>
+                            </li>
+                            <li class="list menu-item-parent">
+                                <a class="animation" href="{{ route('about') }}">About</a>
+                            </li>
+                            <li class="list menu-item-parent">
+                                <a class="animation" href="{{ route('about') }}">Property</a>
+                            </li>
+                            
+                            <li class="list menu-item-parent menu-item-has-children">
+                                <a class="animation" href="{{ route('about') }}">Agents</a>
+                                <ul class="main-menu__dropdown sub-menu">
+                                    <li><a href="agency-lists1.html">Agency List page</a></li>
+                                    <li><a href="agent-lists1.html">Agent List Page</a></li>
+                                    <li><a href="agent-reviews1.html">Agent Reviews Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="list menu-item-parent">
+                                <a class="animation" href="{{ route('contact') }}">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
