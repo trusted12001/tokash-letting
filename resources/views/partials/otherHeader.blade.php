@@ -25,10 +25,6 @@
                             <li>
                                 <a href="with-sidebar2.html">Property</a>
                             </li>
-                            <li>
-                                <a href="agent-lists1.html">Agents</a>
-                            </li>
-
                             <li class="hide-on-desktop-menu">
                                 <a href="index.html">Pages</a>
                                 <ul>

@@ -8,7 +8,7 @@
             <div class="row d-flex align-items-center">
                 <div class="col-xl-2 col-lg-2">
                     <div class="logo-area">
-                        <a href="index.html" class="temp-logo">
+                        <a href="{{ route('home') }}" class="temp-logo">
                             <img src="{{ asset('assets/img/logo_light.png') }}" width="157" height="40" alt="logo" class="img-fluid">
                         </a>
                     </div>
@@ -25,10 +25,6 @@
                             <li>
                                 <a href="with-sidebar2.html">Property</a>
                             </li>
-                            <li>
-                                <a href="agent-lists1.html">Agents</a>
-                            </li>
-
                             <li class="hide-on-desktop-menu">
                                 <a href="index.html">Pages</a>
                                 <ul>
