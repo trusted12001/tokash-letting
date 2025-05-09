@@ -19,7 +19,7 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Contact Page</li>
                 </ol>
             </nav>
@@ -77,7 +77,7 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5088.270389800074!2d7.2668153656202525!3d9.006363608210444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e71006052cff7%3A0x37e1444c4cb76c79!2sNCAA%20Abuja%20regional%20office!5e0!3m2!1sen!2sng!4v1746798985580!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="contact-content">
                             <h3 class="contact-title">Quick Contact</h3>
-                            <p>Borem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod 
+                            <p>Borem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod
                                 Eorem ipsum dolor sit amet conse ctetur.
                             </p>
                             <form class="contact-box rt-contact-form">

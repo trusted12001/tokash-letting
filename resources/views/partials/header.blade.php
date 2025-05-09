@@ -17,10 +17,10 @@
                     <nav id="dropdown" class="template-main-menu">
                         <ul>
                             <li>
-                                <a href="{{ route('home') }}" class="active">Home</a>
+                                <a href="{{ route('home') }}" class="{{ (Route::is('home')) ? 'active' : '' }}">Home</a>
                             </li>
                             <li>
-                                <a href="{{ route('about') }}">About</a>
+                                <a href="{{ route('about') }}" class="{{ (Route::is('about')) ? 'active' : '' }}">About</a>
                             </li>
                             <li>
                                 <a href="with-sidebar2.html">Property</a>
@@ -46,7 +46,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="{{ route('contact') }}">Contact</a>
+                                <a href="{{ route('contact') }}" class="{{ (Route::is('contact')) ? 'active' : '' }}">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -112,7 +112,7 @@
                             <li class="list menu-item-parent">
                                 <a class="animation" href="{{ route('about') }}">Property</a>
                             </li>
-                            
+
                             <li class="list menu-item-parent menu-item-has-children">
                                 <a class="animation" href="{{ route('about') }}">Agents</a>
                                 <ul class="main-menu__dropdown sub-menu">
