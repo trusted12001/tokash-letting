@@ -122,7 +122,7 @@
                             <h2 class="item-title">Search Property Smarter, Quicker & Anywhere</h2>
                             <div class="play-button">
                                 <div class="item-icon">
-                                    <a href="https://youtube.com/shorts/SYW2edaAJio?feature=share" class="play-btn">
+                                    <a href="https://www.youtube.com/shorts/SYW2edaAJio" class="play-btn">
                                         <span class="play-icon style-1">
                                             <i class="fas fa-play"></i>
                                         </span>
