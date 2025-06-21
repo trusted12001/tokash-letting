@@ -13,8 +13,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="main-banner-box1">
-                    <h1 class="item-title wow fadeInUp" data-wow-delay=".4s">Find the perfect place to Live
-                        with your family</h1>
+                    <h1 class="item-title wow fadeInUp" data-wow-delay=".4s">Short Lets Designed for Easy Living.</h1>
                     <div class="listing-category-list wow fadeInUp" data-wow-delay=".6s">
                         <div class="search-radio">
                             <ul class="list-inline">
@@ -102,95 +101,6 @@
                                         </div>
                                         <div class="explore__form-checkbox-list full-filter">
                                             <div class="row">
-                                                <div class="col-lg-4 col-md-6 py-1 pr-30 pl-0">
-                                                    <div class="form-group bed">
-                                                        <label class="item-bedrooms">Bedrooms</label>
-                                                        <div class="nice-select form-control wide" tabindex="0">
-                                                            <span class="current">Any</span>
-                                                            <ul class="list">
-                                                                <li data-value="1" class="option selected ">For
-                                                                    Sale</li>
-                                                                <li data-value="2" class="option">For Rent</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 py-1 pr-30 pl-0 ">
-                                                    <div class="form-group bath">
-                                                        <label class="item-bath">Bathrooms</label>
-                                                        <div class="nice-select form-control wide" tabindex="0">
-                                                            <span class="current">Any</span>
-                                                            <ul class="list">
-                                                                <li data-value="1" class="option selected">1
-                                                                </li>
-                                                                <li data-value="2" class="option">2</li>
-                                                                <li data-value="3" class="option">3</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 py-1 pl-0 pr-0">
-                                                    <div class="form-group garage">
-                                                        <label class="item-garage">Garage</label>
-                                                        <div class="nice-select form-control wide" tabindex="0">
-                                                            <span class="current">Any</span>
-                                                            <ul class="list">
-                                                                <li data-value="1" class="option selected">1
-                                                                </li>
-                                                                <li data-value="2" class="option">2</li>
-                                                                <li data-value="3" class="option">3</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="main-search-field-2 col-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 pl-0">
-                                                            <div class="price-range-wrapper">
-                                                                <div class="range-box">
-                                                                    <div class="price-label">Flat Size:</div>
-                                                                    <div id="price-range-filter-3"
-                                                                        class="price-range-filter"></div>
-                                                                    <div
-                                                                        class="price-filter-wrap d-flex align-items-center">
-                                                                        <div class="price-range-select">
-                                                                            <div class="price-range"
-                                                                                id="price-range-min-3"></div>
-                                                                            <div class="price-range">-</div>
-                                                                            <div class="price-range"
-                                                                                id="price-range-max-3"></div>
-                                                                            <div
-                                                                                class="price-range range-title">
-                                                                                sft</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6 pl-0">
-                                                            <div class="price-range-wrapper">
-                                                                <div class="range-box">
-                                                                    <div class="price-label">Distance:</div>
-                                                                    <div id="price-range-filter-2"
-                                                                        class="price-range-filter"></div>
-                                                                    <div
-                                                                        class="price-filter-wrap d-flex align-items-center">
-                                                                        <div class="price-range-select">
-                                                                            <div class="price-range"
-                                                                                id="price-range-min-2"></div>
-                                                                            <div class="price-range">-</div>
-                                                                            <div class="price-range"
-                                                                                id="price-range-max-2"></div>
-                                                                            <div
-                                                                                class="price-range range-title">
-                                                                                km</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                 <div class="row">
 
                                                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -250,7 +160,7 @@
                                                                 <input id="a-9" class="checkbox-custom"
                                                                     name="a-9" type="checkbox">
                                                                 <label for="a-9"
-                                                                    class="checkbox-custom-label">Balcony</label>
+                                                                    class="checkbox-custom-label">Car Park</label>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -267,8 +177,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="item-para wow fadeInUp" data-wow-delay=".4s">We’ve more than <span
-                            class="banner-p">54,000</span> apartments, place & plot.
+                        <p class="item-para wow fadeInUp" data-wow-delay=".4s">We’ve more apartments, place & plot.
                         </p>
                     </div>
                 </div>
@@ -276,71 +185,7 @@
         </div>
     </div>
 </section>
-<!--=====================================-->
-<!--=   Brand     Start                 =-->
-<!--=====================================-->
 
-<section class="brand-wrap1">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-4">
-                <div class="brand-box1 wow fadeInUp" data-wow-delay=".2s">
-                    <span class="section-subtitle">Our Clients</span>
-                    <h2 class="section-title">We're going to became partners for the long run</h2>
-                    <p>Ghen an unknown printer took a galley of type andscr
-                        ambledit to make a type specimen book has survived
-                        not only five centuries but also.</p>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="item-img">
-                                <a href="index.html"><img src="{{ asset('assets/img/brand/brand1.svg') }}" alt="brand"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="item-img">
-                                <a href="index.html"><img src="{{ asset('assets/img/brand/brand2.svg') }}" alt="brand"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="item-img">
-                                <a href="index.html"><img src="{{ asset('assets/img/brand/brand3.svg') }}" alt="brand"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="item-img">
-                                <a href="index.html"><img src="{{ asset('assets/img/brand/brand4.svg') }}" alt="brand"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="item-img">
-                                <a href="index.html"><img src="{{ asset('assets/img/brand/brand5.svg') }}" alt="brand"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="item-img">
-                                <a href="index.html"><img src="{{ asset('assets/img/brand/brand6.svg') }}" alt="brand"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <!--=====================================-->
 <!--=   Property     Start              =-->
 <!--=====================================-->
@@ -702,8 +547,8 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-7 col-sm-12">
                 <div class="item-heading-left">
-                    <span class="section-subtitle">Top Areas</span>
-                    <h2 class="section-title">Find Your Neighborhood</h2>
+                    <span class="section-subtitle">Target Areas</span>
+                    <h2 class="section-title">Popular Landmarks</h2>
                     <div class="bg-title-wrap" style="display: block;">
                         <span class="background-title solid">Locations</span>
                     </div>
@@ -723,9 +568,9 @@
                     </div>
                     <div class="item-content">
                         <div class="content-body">
-                            <div class="item-category">02 properties</div>
+                            <div class="item-category">Kano Round-about</div>
                             <div class="item-title">
-                                <h3><a href="single-listing2.html">San Francisco</a></h3>
+                                <h3><a href="single-listing2.html">Kano</a></h3>
                             </div>
                         </div>
                         <div class="location-button">
@@ -741,9 +586,9 @@
                     </div>
                     <div class="item-content">
                         <div class="content-body">
-                            <div class="item-category">02 properties</div>
+                            <div class="item-category">Abuja City Gate</div>
                             <div class="item-title">
-                                <h3><a href="single-listing2.html">Los Angeles</a></h3>
+                                <h3><a href="single-listing2.html">Abuja</a></h3>
                             </div>
                         </div>
                         <div class="location-button">
@@ -759,9 +604,9 @@
                     </div>
                     <div class="item-content">
                         <div class="content-body">
-                            <div class="item-category">02 properties</div>
+                            <div class="item-category">Cocoa House</div>
                             <div class="item-title">
-                                <h3><a href="single-listing2.html">Melbourne</a></h3>
+                                <h3><a href="single-listing2.html">Ibadan</a></h3>
                             </div>
                         </div>
                         <div class="location-button">
@@ -777,9 +622,9 @@
                     </div>
                     <div class="item-content">
                         <div class="content-body">
-                            <div class="item-category">02 properties</div>
+                            <div class="item-category">Lekki-Ikoyi Bridge</div>
                             <div class="item-title">
-                                <h3><a href="single-listing2.html">Sydney</a></h3>
+                                <h3><a href="single-listing2.html">Lagos</a></h3>
                             </div>
                         </div>
                         <div class="location-button">
@@ -800,8 +645,8 @@
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-12">
                 <div class="property-box1 wow slideInUp" data-wow-delay="100">
-                    <div class="item-subtitle">Let’s Take a Tour</div>
-                    <h3 class="item-title">Search Property Smarter, Quicker & Anywhere</h3>
+                    <div class="item-subtitle">Take a Tour</div>
+                    <h3 class="item-title">Let's take you round for a quick tour</h3>
                     <div class="play-button">
                         <div class="item-icon">
                             <a href="http://www.youtube.com/watch?v=1iIZeIy7TqM" class="play-btn">
@@ -819,33 +664,6 @@
                 <div class="property-img wow fadeInUp" data-wow-delay="100">
                     <div class="bg-title-wrap" style="display: block;">
                         <span class="background-title solid">Property For All</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--=====================================-->
-<!--=   Action     Start                =-->
-<!--=====================================-->
-
-<section class="action-wrap1 wow zoomIn" data-wow-delay=".2s">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="action-box1" data-bg-image="{{ asset('assets/img/figure/action1.jpg')}}" >
-                    <div class="action-layout">
-                        <div class="item-title">
-                            <div class="item-icon"><i class="fas fa-users"></i></div>
-                            <div class="item-head">
-                                <h3>Become an Agent</h3>
-                                <p>Agent hen an unknown printer took a galley scramble</p>
-                            </div>
-
-                        </div>
-                        <div class="call-button">
-                            <a href="agency-lists1.html" class="call-btn">Join Now</a>
-                        </div>
                     </div>
                 </div>
             </div>

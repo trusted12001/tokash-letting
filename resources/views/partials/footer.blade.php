@@ -8,10 +8,7 @@
                         <div class="item-logo">
                             <img src="{{ asset('assets/img/logo_light.png')}}" width="157" height="40" alt="logo" class="img-fluid">
                         </div>
-                        <p>Corem ipsum dolor sit amet consecte turad
-                            pisicing elit, sed do eiusmod tempor inci
-                            didunt ut labore et dolor.pisicing elit, sed do eiusmod tempor inci
-                        </p>
+                        <p>Your perfect stay, your way. Explore our diverse range of short-let accommodations in prime locations, offering flexible terms for your unique needs</p>
                         <div class="item-social">
                             <ul>
                                 <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -31,7 +28,6 @@
                         <div class="item-link">
                             <ul>
                                 <li><a href="about-1.html">About Us </a></li>
-                                <li><a href="blog-details1.html">Blogs & Articles </a></li>
                                 <li><a href="about-1.html">Terms & Conditions</a></li>
                                 <li><a href="about-1.html">Privacy Policy </a></li>
                                 <li><a href="contact.html">Contact Us </a></li>
@@ -160,7 +156,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="copyright-area2">
-                        <p>2022© All rightre served by RadiusTheme</p>
+                        <p>2025© All rightre served by RadiusTheme</p>
                     </div>
                 </div>
             </div>

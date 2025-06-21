@@ -6,6 +6,15 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactController;
 
 use App\Http\Controllers\AboutController;
+use Illuminate\Support\Facades\Auth;
+
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
