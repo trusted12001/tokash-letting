@@ -15,7 +15,7 @@ class UserRoleSeeder extends Seeder
         $user = User::first();
 
         // Create a role if it doesn't exist
-        $role = Role::firstOrCreate(['name' => 'Super Admin']);
+        $role = Role::firstOrCreate(['name' => 'super-admin']);
 
         // Assign the role to the user
         $user->assignRole($role);
