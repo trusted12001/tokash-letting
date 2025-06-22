@@ -100,16 +100,7 @@
                                 <a class="animation" href="{{ route('about') }}">About</a>
                             </li>
                             <li class="list menu-item-parent">
-                                <a class="animation" href="{{ route('about') }}">Property</a>
-                            </li>
-
-                            <li class="list menu-item-parent menu-item-has-children">
-                                <a class="animation" href="{{ route('about') }}">Agents</a>
-                                <ul class="main-menu__dropdown sub-menu">
-                                    <li><a href="agency-lists1.html">Agency List page</a></li>
-                                    <li><a href="agent-lists1.html">Agent List Page</a></li>
-                                    <li><a href="agent-reviews1.html">Agent Reviews Page</a></li>
-                                </ul>
+                                <a class="animation" href="{{ route('home') . '#my_properties' }}">Property</a>
                             </li>
                             <li class="list menu-item-parent">
                                 <a class="animation" href="{{ route('contact') }}">Contact us</a>
