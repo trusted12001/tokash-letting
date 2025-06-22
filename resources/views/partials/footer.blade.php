@@ -27,10 +27,10 @@
                         </div>
                         <div class="item-link">
                             <ul>
-                                <li><a href="about-1.html">About Us </a></li>
-                                <li><a href="about-1.html">Terms & Conditions</a></li>
-                                <li><a href="about-1.html">Privacy Policy </a></li>
-                                <li><a href="contact.html">Contact Us </a></li>
+                                <li><a href="{{ route('about') }}">About Us </a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy </a></li>
+                                <li><a href="{{ route('contact') }}">Contact Us </a></li>
                             </ul>
                         </div>
                     </div>
@@ -131,11 +131,9 @@
                         </div>
                         <div class="footer-location">
                             <ul>
-                                <li class="item-map"><i class="fas fa-map-marker-alt"></i>121 King St, Melbourne
-                                    den
-                                    3000, Australia</li>
-                                <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i>info@example.com</a></li>
-                                <li><a href="tel:+123596000"><i class="fas fa-phone-alt"></i>(+123) 596 000</a></li>
+                                <li class="item-map"><i class="fas fa-map-marker-alt"></i>Block, Flat 1, NCAA Quraters, NAIA</li>
+                                <li><a href="mailto:tokash38@hotmail.com"><i class="fas fa-envelope"></i>tokash38@hotmail.com</a></li>
+                                <li><a href="tel:+2347081929243"><i class="fas fa-phone-alt"></i>+234 70 8192 9243</a></li>
                             </ul>
                         </div>
                     </div>
@@ -149,14 +147,14 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="copyright-area1">
                         <ul>
-                            <li><a href="about-1.html">Terms of Use</a></li>
-                            <li><a href="about-1.html">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="copyright-area2">
-                        <p>2025© All rightre served by RadiusTheme</p>
+                        <p>2025© All rightre served by <a href="https://trusted12001.github.io/personal-portfolio/" target="_blank" rel="noopener noreferrer">Abdul</a></p>
                     </div>
                 </div>
             </div>
