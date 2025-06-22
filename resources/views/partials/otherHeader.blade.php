@@ -55,13 +55,22 @@
                     <div class="header-action-layout1">
                         <ul class="action-list">
                             <li class="action-item-style my-account">
-                                <a href="account.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                    title="Sign In">
-                                    <i class="flaticon-user-1"></i>
-                                </a>
+                                @guest
+                                    <a href="{{ route('login') }}" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Sign In">
+                                        <i class="flaticon-user-1"></i>
+                                    </a>
+                                @endguest
+
+                                @auth
+                                    <a href="{{ route('dashboard') }}" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Dashboard">
+                                        <i class="flaticon-home"></i>
+                                    </a>
+                                @endauth
                             </li>
                             <li class="listing-button">
-                                <a href="post-add.html" class="listing-btn">
+                                <a href="{{ route('dashboard') }}" class="listing-btn">
                                     <span>
                                         <i class="fas fa-plus-circle"></i>
                                     </span>

@@ -24,8 +24,8 @@
                     <label for="type" class="form-label">Type</label>
                     <select name="type" class="form-select" required>
                         <option value="">-- Select Type --</option>
-                        <option value="for-rent" {{ old('type') == 'for-rent' ? 'selected' : '' }}>For Rent</option>
-                        <option value="for-sell" {{ old('type') == 'for-sell' ? 'selected' : '' }}>For Sell</option>
+                        <option value="rent" {{ old('type') == 'rent' ? 'selected' : '' }}>For Rent</option>
+                        <option value="sell" {{ old('type') == 'sell' ? 'selected' : '' }}>For Sell</option>
                     </select>
                 </div>
 
@@ -46,22 +46,22 @@
 
                 <div class="mb-3">
                     <label for="beds" class="form-label">Number of Beds</label>
-                    <input type="number" name="beds" class="form-control" value="{{ old('beds') }}" required>
+                    <input type="number" name="bedrooms" class="form-control" value="{{ old('bedrooms') }}" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="baths" class="form-label">Number of Baths</label>
-                    <input type="number" name="baths" class="form-control" value="{{ old('baths') }}" required>
+                    <input type="number" name="bathrooms" class="form-control" value="{{ old('bathrooms') }}" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="size" class="form-label">Size (Sqft)</label>
-                    <input type="number" name="size" class="form-control" value="{{ old('size') }}" required>
+                    <input type="number" name="area" class="form-control" value="{{ old('area') }}" required>
                 </div>
 
                 <div class="mb-3">
-                    <label for="image" class="form-label">Property Image</label>
-                    <input type="file" name="image" class="form-control" required>
+                    <label for="main_image" class="form-label">Property Main Image</label>
+                    <input type="file" name="main_image" class="form-control" required>
                 </div>
 
                 <div class="mb-3">

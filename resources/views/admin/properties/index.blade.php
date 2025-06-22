@@ -6,7 +6,8 @@
         <h4 class="text-dark">Manage Properties</h4>
         <div>
             <a href="{{ route('dashboard') }}" class="btn btn-secondary me-2">Back to Dashboard</a>
-            <a href="{{ route('properties.create') }}" class="btn btn-primary">Add Property</a>
+            <a href="{{ route('admin.properties.create') }}" class="btn btn-primary">Add Property</a>
+
         </div>
     </div>
 
@@ -37,8 +38,8 @@
                     <td>${{ number_format($property->price) }}</td>
                     <td>{{ $property->location }}</td>
                     <td>
-                        <a href="{{ route('properties.edit', $property->id) }}" class="btn btn-sm btn-info">Edit</a>
-                        <form action="{{ route('properties.destroy', $property->id) }}" method="POST" style="display:inline;">
+                        <a href="{{ route('admin.properties.edit', $property->id) }}" class="btn btn-sm btn-info">Edit</a>
+                        <form action="{{ route('admin.properties.destroy', $property->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
                             <button class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">Delete</button>

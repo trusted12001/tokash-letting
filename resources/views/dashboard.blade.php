@@ -28,7 +28,7 @@
                 <i class="fas fa-building fa-2x text-success mb-3"></i>
                 <h5 class="card-title">Manage Properties</h5>
                 <p class="card-text">Add, update or delete property listings.</p>
-                <a href="{{ route('properties.index') }}" class="btn btn-success">View Properties</a>
+                <a href="{{ route('admin.properties.index') }}" class="btn btn-success">View Properties</a>
             </div>
         </div>
     </div>

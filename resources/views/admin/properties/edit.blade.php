@@ -24,8 +24,8 @@
                 <div class="mb-3">
                     <label for="type" class="form-label">Type</label>
                     <select name="type" class="form-select" required>
-                        <option value="for-rent" {{ $property->type === 'for-rent' ? 'selected' : '' }}>For Rent</option>
-                        <option value="for-sell" {{ $property->type === 'for-sell' ? 'selected' : '' }}>For Sell</option>
+                        <option value="rent" {{ $property->type === 'rent' ? 'selected' : '' }}>For Rent</option>
+                        <option value="sell" {{ $property->type === 'sell' ? 'selected' : '' }}>For Sell</option>
                     </select>
                 </div>
 
@@ -46,15 +46,40 @@
 
                 <div class="mb-3">
                     <label for="beds" class="form-label">Beds</label>
-                    <input type="number" name="beds" class="form-control" value="{{ old('beds', $property->beds) }}" required>
+                    <input type="number" name="bedrooms" class="form-control" value="{{ old('bedrooms', $property->bedrooms) }}" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="baths" class="form-label">Baths</label>
-                    <input type="number" name="baths" class="form-control" value="{{ old('baths', $property->baths) }}" required>
+                    <input type="number" name="bathrooms" class="form-control" value="{{ old('bathrooms', $property->bathrooms) }}" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="size" class="form-label">Size (Sqft)</label>
-                    <input type="number" name="size" class="form-control" value="{{ old('siz
+                    <input type="number" name="area" class="form-control" value="{{ old('area', $property->area) }}" required>
+                </div>
 
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="description" class="form-control" rows="4" required>{{ old('description', $property->description) }}</textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="main_image" class="form-label">Property Image</label>
+                    <input type="file" name="main_image" class="form-control">
+                    @if($property->main_image)
+                        <div class="mt-2">
+                            <img src="{{ asset('storage/' . $property->main_image) }}" alt="Current Image" width="150">
+                        </div>
+                    @endif
+                </div>
+
+                <div class="mb-3 text-end">
+                    <button type="submit" class="btn btn-primary">Update Property</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+@endsection

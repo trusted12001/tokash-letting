@@ -190,7 +190,7 @@
 <!--=   Property     Start              =-->
 <!--=====================================-->
 
-{{-- <section class="property-wrap1">
+<section class="property-wrap1">
     <div class="container">
         <div class="isotope-wrap">
             <div class="row">
@@ -212,307 +212,47 @@
                 </div>
             </div>
             <div class="row featuredContainer">
-                <div class="col-xl-4 col-lg-6 col-md-6 for-sell">
-                    <div class="property-box2 wow animated fadeInUp" data-wow-delay=".3s">
-                        <div class="item-img">
-                            <a href="single-listing1.html"><img src="{{ asset('assets/img/blog/blog4.jpg') }}" alt="blog" width="510" height="340"></a>
-                            <div class="item-category-box1">
-                                <div class="item-category">For Sell</div>
+                @forelse($latestProperties as $property)
+                    <div class="col-xl-4 col-lg-6 col-md-6 {{ $property->type == 'rent' ? 'for-rent' : 'for-sell' }}">
+                        <div class="property-box2 wow animated fadeInUp" data-wow-delay=".2s">
+                            <div class="item-img">
+                                <a href="{{ route('admin.properties.show', $property->id) }}">
+                                    <img src="{{ asset('storage/' . $property->main_image) }}" alt="{{ $property->title }}" width="510" height="340">
+                                </a>
+                                <div class="item-category-box1">
+                                    <div class="item-category">{{ ucfirst($property->type) }}</div>
+                                </div>
+                                <div class="rent-price">
+                                    <div class="item-price">₦{{ number_format($property->price) }}<span><i>/</i>{{ $property->billing_cycle }}</span></div>
+                                </div>
                             </div>
-                            <div class="rent-price">
-                                <div class="item-price">$15,000<span><i>/</i>mo</span></div>
-                            </div>
-                            <div class="react-icon">
-                                <ul>
-                                    <li>
-                                        <a href="favourite.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Favourites">
-                                            <i class="flaticon-heart"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Compare">
-                                            <i class="flaticon-left-and-right-arrows"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item-category10"><a href="single-listing1.html">Appartment</a></div>
-                        <div class="item-content">
-                            <div class="verified-area">
-                                <h3 class="item-title"><a href="single-listing1.html">Family House For Sell</a></h3>
-                            </div>
-                            <div class="location-area"><i class="flaticon-maps-and-flags"></i>Downey, California</div>
-                            <div class="item-categoery3">
-                                <ul>
-                                    <li><i class="flaticon-bed"></i>Beds: 03</li>
-                                    <li><i class="flaticon-shower"></i>Baths: 02</li>
-                                    <li><i class="flaticon-two-overlapping-square"></i>931 Sqft</li>
-                                </ul>
+                            <div class="item-category10"><a href="#">{{ $property->category }}</a></div>
+                            <div class="item-content">
+                                <div class="verified-area">
+                                    <h3 class="item-title">
+                                        <a href="{{ route('admin.properties.show', $property->id) }}">{{ $property->title }}</a>
+                                    </h3>
+                                </div>
+                                <div class="location-area"><i class="flaticon-maps-and-flags"></i>{{ $property->location }}</div>
+                                <div class="item-categoery3">
+                                    <ul>
+                                        <li><i class="flaticon-bed"></i>Beds: {{ $property->bedrooms }}</li>
+                                        <li><i class="flaticon-shower"></i>Baths: {{ $property->bathrooms }}</li>
+                                        <li><i class="flaticon-two-overlapping-square"></i>{{ $property->area }} Sqft</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 for-rent">
-                    <div class="property-box2 wow animated fadeInUp" data-wow-delay=".2s">
-                        <div class="item-img">
-                            <a href="single-listing1.html"><img src="{{ asset('assets/img/blog/blog5.jpg') }}" alt="blog" width="510" height="340"></a>
-                            <div class="item-category-box1">
-                                <div class="item-category">For Rent</div>
-                            </div>
-                            <div class="rent-price">
-                                <div class="item-price">$12,000<span><i>/</i>mo</span></div>
-                            </div>
-                            <div class="react-icon">
-                                <ul>
-                                    <li>
-                                        <a href="favourite.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Favourites">
-                                            <i class="flaticon-heart"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Compare">
-                                            <i class="flaticon-left-and-right-arrows"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item-category10"><a href="single-listing1.html">Villa</a></div>
-                        <div class="item-content">
-                            <div class="verified-area">
-                                <h3 class="item-title"><a href="single-listing1.html">Countryside Modern Lake View</a></h3>
-                            </div>
-                            <div class="location-area"><i class="flaticon-maps-and-flags"></i>Downey, California</div>
-                            <div class="item-categoery3">
-                                <ul>
-                                    <li><i class="flaticon-bed"></i>Beds: 03</li>
-                                    <li><i class="flaticon-shower"></i>Baths: 02</li>
-                                    <li><i class="flaticon-two-overlapping-square"></i>931 Sqft</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 for-sell">
-                    <div class="property-box2 wow animated fadeInUp" data-wow-delay=".1s">
-                        <div class="item-img">
-                            <a href="single-listing1.html"><img src="{{ asset('assets/img/blog/blog6.jpg') }}" alt="blog" width="510" height="340"></a>
-                            <div class="item-category-box1">
-                                <div class="item-category">For Sell</div>
-                            </div>
-                            <div class="rent-price">
-                                <div class="item-price">$18,000<span><i>/</i>mo</span></div>
-                            </div>
-                            <div class="react-icon">
-                                <ul>
-                                    <li>
-                                        <a href="favourite.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Favourites">
-                                            <i class="flaticon-heart"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Compare">
-                                            <i class="flaticon-left-and-right-arrows"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item-category10"><a href="single-listing1.html">Office</a></div>
-                        <div class="item-content">
-                            <div class="verified-area">
-                                <h3 class="item-title"><a href="single-listing1.html">Gorgeous Apartment Building </a></h3>
-                            </div>
-                            <div class="location-area"><i class="flaticon-maps-and-flags"></i>Downey, California</div>
-                            <div class="item-categoery3">
-                                <ul>
-                                    <li><i class="flaticon-bed"></i>Beds: 03</li>
-                                    <li><i class="flaticon-shower"></i>Baths: 02</li>
-                                    <li><i class="flaticon-two-overlapping-square"></i>931 Sqft</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 for-rent">
-                    <div class="property-box2 wow animated fadeInUp" data-wow-delay=".3s">
-                        <div class="item-img">
-                            <a href="single-listing1.html"><img src="{{ asset('assets/img/blog/blog7.jpg') }}" alt="blog" width="510" height="340"></a>
-                            <div class="item-category-box1">
-                                <div class="item-category">For Rent</div>
-                            </div>
-                            <div class="rent-price">
-                                <div class="item-price">$19,000<span><i>/</i>mo</span></div>
-                            </div>
-                            <div class="react-icon">
-                                <ul>
-                                    <li>
-                                        <a href="favourite.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Favourites">
-                                            <i class="flaticon-heart"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Compare">
-                                            <i class="flaticon-left-and-right-arrows"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item-category10"><a href="single-listing1.html">Commercial</a></div>
-                        <div class="item-content">
-                            <div class="verified-area">
-                                <h3 class="item-title"><a href="single-listing1.html">Countryside Modern Lake View </a></h3>
-                            </div>
-                            <div class="location-area"><i class="flaticon-maps-and-flags"></i>Downey, California</div>
-                            <div class="item-categoery3">
-                                <ul>
-                                    <li><i class="flaticon-bed"></i>Beds: 03</li>
-                                    <li><i class="flaticon-shower"></i>Baths: 02</li>
-                                    <li><i class="flaticon-two-overlapping-square"></i>931 Sqft</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 for-sell">
-                    <div class="property-box2 wow animated fadeInUp" data-wow-delay=".6s">
-                        <div class="item-img">
-                            <a href="single-listing1.html"><img src="{{ asset('assets/img/blog/blog8.jpg') }}" alt="blog" width="510" height="340"></a>
-                            <div class="item-category-box1">
-                                <div class="item-category">For Sell</div>
-                            </div>
-                            <div class="rent-price">
-                                <div class="item-price">$30,000<span><i>/</i>mo</span></div>
-                            </div>
-                            <div class="react-icon">
-                                <ul>
-                                    <li>
-                                        <a href="favourite.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Favourites">
-                                            <i class="flaticon-heart"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Compare">
-                                            <i class="flaticon-left-and-right-arrows"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item-category10"><a href="single-listing1.html">Villa</a></div>
-                        <div class="item-content">
-                            <div class="verified-area">
-                                <h3 class="item-title"><a href="single-listing1.html">Family House For Sell</a></h3>
-                            </div>
-                            <div class="location-area"><i class="flaticon-maps-and-flags"></i>Downey, California</div>
-                            <div class="item-categoery3">
-                                <ul>
-                                    <li><i class="flaticon-bed"></i>Beds: 03</li>
-                                    <li><i class="flaticon-shower"></i>Baths: 02</li>
-                                    <li><i class="flaticon-two-overlapping-square"></i>931 Sqft</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 for-rent">
-                    <div class="property-box2 wow animated fadeInUp" data-wow-delay=".2s">
-                        <div class="item-img">
-                            <a href="single-listing1.html"><img src="{{ asset('assets/img/blog/blog9.jpg') }}" alt="blog" width="510" height="340"></a>
-                            <div class="item-category-box1">
-                                <div class="item-category">For Rent</div>
-                            </div>
-                            <div class="rent-price">
-                                <div class="item-price">$25,000<span><i>/</i>mo</span></div>
-                            </div>
-                            <div class="react-icon">
-                                <ul>
-                                    <li>
-                                        <a href="favourite.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Favourites">
-                                            <i class="flaticon-heart"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="compare.html" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Compare">
-                                            <i class="flaticon-left-and-right-arrows"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item-category10"><a href="single-listing1.html">Office</a></div>
-                        <div class="item-content">
-                            <div class="verified-area">
-                                <h3 class="item-title"><a href="single-listing1.html">Countryside Modern Lake View</a></h3>
-                            </div>
-                            <div class="location-area"><i class="flaticon-maps-and-flags"></i>Downey, California</div>
-                            <div class="item-categoery3">
-                                <ul>
-                                    <li><i class="flaticon-bed"></i>Beds: 03</li>
-                                    <li><i class="flaticon-shower"></i>Baths: 02</li>
-                                    <li><i class="flaticon-two-overlapping-square"></i>931 Sqft</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @empty
+                    <p class="text-muted">No properties available at the moment.</p>
+                @endforelse
             </div>
         </div>
     </div>
-</section> --}}
+</section>
 
 
-<div class="row featuredContainer">
-    @forelse($latestProperties as $property)
-        <div class="col-xl-4 col-lg-6 col-md-6 {{ $property->type == 'rent' ? 'for-rent' : 'for-sell' }}">
-            <div class="property-box2 wow animated fadeInUp" data-wow-delay=".2s">
-                <div class="item-img">
-                    <a href="{{ route('property.show', $property->id) }}">
-                        <img src="{{ asset('storage/' . $property->main_image) }}" alt="{{ $property->title }}" width="510" height="340">
-                    </a>
-                    <div class="item-category-box1">
-                        <div class="item-category">{{ ucfirst($property->type) }}</div>
-                    </div>
-                    <div class="rent-price">
-                        <div class="item-price">₦{{ number_format($property->price) }}<span><i>/</i>{{ $property->billing_cycle }}</span></div>
-                    </div>
-                </div>
-                <div class="item-category10"><a href="#">{{ $property->category }}</a></div>
-                <div class="item-content">
-                    <div class="verified-area">
-                        <h3 class="item-title">
-                            <a href="{{ route('property.show', $property->id) }}">{{ $property->title }}</a>
-                        </h3>
-                    </div>
-                    <div class="location-area"><i class="flaticon-maps-and-flags"></i>{{ $property->location }}</div>
-                    <div class="item-categoery3">
-                        <ul>
-                            <li><i class="flaticon-bed"></i>Beds: {{ $property->bedrooms }}</li>
-                            <li><i class="flaticon-shower"></i>Baths: {{ $property->bathrooms }}</li>
-                            <li><i class="flaticon-two-overlapping-square"></i>{{ $property->area }} Sqft</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    @empty
-        <p class="text-muted">No properties available at the moment.</p>
-    @endforelse
-</div>
 
 <!--=====================================-->
 <!--=   About     Start                 =-->

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
     use App\Models\Property;
 
 
+
 class PropertyController extends Controller
 {
 
@@ -24,17 +25,22 @@ public function create()
 public function store(Request $request)
 {
     $request->validate([
-        'title' => 'required|string|max:255',
+         'title' => 'required|string|max:255',
         'price' => 'required|numeric',
-        'address' => 'required|string|max:255',
+        'location' => 'required|string|max:255',
         'type' => 'required|in:rent,sell',
-        'image' => 'nullable|image|max:2048',
+        'main_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
+        'category' => 'nullable|string|max:255',
+        'bedrooms' => 'nullable|string|max:255',
+        'bathrooms' => 'nullable|string|max:255',
+        'area' => 'nullable|string|max:255',
     ]);
 
-    $data = $request->only(['title', 'price', 'address', 'type']);
+    $data = $request->only(['title', 'price', 'location', 'type', 'category', 'bedrooms', 'bathrooms', 'area']);
 
-    if ($request->hasFile('image')) {
-        $data['image'] = $request->file('image')->store('properties', 'public');
+
+    if ($request->hasFile('main_image')) {
+        $data['main_image'] = $request->file('main_image')->store('properties', 'public');
     }
 
     Property::create($data);
@@ -53,22 +59,29 @@ public function update(Request $request, $id)
     $request->validate([
         'title' => 'required|string|max:255',
         'price' => 'required|numeric',
-        'address' => 'required|string|max:255',
+        'location' => 'required|string|max:255',
         'type' => 'required|in:rent,sell',
-        'image' => 'nullable|image|max:2048',
+        'main_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
+        'category' => 'nullable|string|max:255',
+        'bedrooms' => 'nullable|string|max:255',
+        'bathrooms' => 'nullable|string|max:255',
+        'area' => 'nullable|string|max:255',
     ]);
 
     $property = Property::findOrFail($id);
-    $data = $request->only(['title', 'price', 'address', 'type']);
+    $data = $request->only(['title', 'price', 'location', 'type', 'category', 'bedrooms', 'bathrooms', 'area']);
 
-    if ($request->hasFile('image')) {
-        $data['image'] = $request->file('image')->store('properties', 'public');
+    if ($request->hasFile('main_image')) {
+        $data['main_image'] = $request->file('main_image')->store('properties', 'public');
     }
+
 
     $property->update($data);
 
     return redirect()->route('admin.properties.index')->with('success', 'Property updated successfully.');
 }
+
+
 
 public function destroy($id)
 {
@@ -77,4 +90,12 @@ public function destroy($id)
 
     return redirect()->route('admin.properties.index')->with('success', 'Property deleted successfully.');
 }
+
+
+public function show($id)
+{
+    $property = Property::findOrFail($id);
+    return view('admin.properties.show', compact('property'));
+}
+
 }
