@@ -76,15 +76,16 @@
                                                     <option value="1">Property Type</option>
                                                     <option value="2">Family House</option>
                                                     <option value="3">Apartment</option>
-                                                    <option value="3">Condo</option>
+                                                    <option value="4">Flat</option>
                                                 </select>
                                             </div>
                                             <div class="rld-single-select item">
                                                 <select class="select single-select mr-0">
                                                     <option value="1">All Cities</option>
-                                                    <option value="2">Los Angeles</option>
-                                                    <option value="3">Chicago</option>
-                                                    <option value="3">Philadelphia</option>
+                                                    <option value="2">Abuja</option>
+                                                    <option value="3">Ibadan</option>
+                                                    <option value="4">Kano</option>
+                                                    <option value="5">Lagos</option>
                                                 </select>
                                             </div>
                                             <div class="item rt-filter-btn">
@@ -94,7 +95,7 @@
                                                     </span>
                                                 </div>
                                                 <div class="filter-button-area">
-                                                    <a class="filter-btn" href="with-sidebar.html"><span>Search</span><i
+                                                    <a class="filter-btn" href="#"><span>Search</span><i
                                                             class="fas fa-search"></i></a>
                                                 </div>
                                             </div>
@@ -167,8 +168,8 @@
 
                                                 </div>
                                                 <div class="filter-button">
-                                                    <a href="index.html" class="filter-btn1">Apply Filter</a>
-                                                    <a href="index.html" class="filter-btn1 reset-btn">Reset Filter<i
+                                                    <a href="#" class="filter-btn1">Apply Filter</a>
+                                                    <a href="#" class="filter-btn1 reset-btn">Reset Filter<i
                                                             class="fas fa-redo-alt"></i></a>
                                                 </div>
                                             </div>
@@ -311,7 +312,7 @@
                         </ul>
                     </div>
                     <div class="about-button">
-                        <a href="single-listing1.html" class="item-btn">Read More</a>
+                        <a href="#" class="item-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -336,7 +337,7 @@
             </div>
             <div class="col-lg-6 col-md-5 col-sm-12">
                 <div class="heading-button">
-                    <a href="single-listing1.html" class="heading-btn item-btn-2">Explore More</a>
+                    <a href="#" class="heading-btn item-btn-2">Explore More</a>
                 </div>
             </div>
         </div>
@@ -344,17 +345,17 @@
             <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="location-box1 wow zoomIn" data-wow-delay=".2s">
                     <div class="item-img">
-                        <a href="single-listing1.html"><img src="{{ asset('assets/img/blog/location1.jpg') }}" alt="location" width="510" height="660"></a>
+                        <a href="#"><img src="{{ asset('assets/img/blog/location1.jpg') }}" alt="location" width="510" height="660"></a>
                     </div>
                     <div class="item-content">
                         <div class="content-body">
                             <div class="item-category">Kano Round-about</div>
                             <div class="item-title">
-                                <h3><a href="single-listing2.html">Kano</a></h3>
+                                <h3><a href="#">Kano</a></h3>
                             </div>
                         </div>
                         <div class="location-button">
-                            <a href="single-listing3.html" class="location-btn"><i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="location-btn"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -362,17 +363,17 @@
             <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="location-box1 wow zoomIn" data-wow-delay=".6s">
                     <div class="item-img">
-                        <a href="single-listing1.html"><img src="{{ asset('assets/img/blog/location2.jpg') }}" alt="location" width="510" height="660"></a>
+                        <a href="#"><img src="{{ asset('assets/img/blog/location2.jpg') }}" alt="location" width="510" height="660"></a>
                     </div>
                     <div class="item-content">
                         <div class="content-body">
                             <div class="item-category">Abuja City Gate</div>
                             <div class="item-title">
-                                <h3><a href="single-listing2.html">Abuja</a></h3>
+                                <h3><a href="#">Abuja</a></h3>
                             </div>
                         </div>
                         <div class="location-button">
-                            <a href="single-listing3.html" class="location-btn"><i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="location-btn"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -380,17 +381,17 @@
             <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="location-box1 wow zoomIn" data-wow-delay=".4s">
                     <div class="item-img">
-                        <a href="single-listing1.html"><img src="{{ asset('assets/img/blog/location3.jpg') }}" alt="location" width="510" height="660"></a>
+                        <a href="#"><img src="{{ asset('assets/img/blog/location3.jpg') }}" alt="location" width="510" height="660"></a>
                     </div>
                     <div class="item-content">
                         <div class="content-body">
                             <div class="item-category">Cocoa House</div>
                             <div class="item-title">
-                                <h3><a href="single-listing2.html">Ibadan</a></h3>
+                                <h3><a href="#">Ibadan</a></h3>
                             </div>
                         </div>
                         <div class="location-button">
-                            <a href="single-listing3.html" class="location-btn"><i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="location-btn"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -398,17 +399,17 @@
             <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="location-box1 wow zoomIn" data-wow-delay=".2s">
                     <div class="item-img">
-                        <a href="single-listing1.html"><img src="{{ asset('assets/img/blog/location4.jpg') }}" alt="location" width="510" height="660"></a>
+                        <a href="#"><img src="{{ asset('assets/img/blog/location4.jpg') }}" alt="location" width="510" height="660"></a>
                     </div>
                     <div class="item-content">
                         <div class="content-body">
                             <div class="item-category">Lekki-Ikoyi Bridge</div>
                             <div class="item-title">
-                                <h3><a href="single-listing2.html">Lagos</a></h3>
+                                <h3><a href="#">Lagos</a></h3>
                             </div>
                         </div>
                         <div class="location-button">
-                            <a href="single-listing3.html" class="location-btn"><i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="location-btn"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
