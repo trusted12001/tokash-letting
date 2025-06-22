@@ -9,7 +9,7 @@
                 <div class="col-xl-2 col-lg-2">
                     <div class="logo-area">
                         <a href="{{ route('home') }}" class="temp-logo">
-                            <img src="{{ asset('assets/img/logo.jpeg') }}" width="157" height="40" alt="logo" class="img-fluid">
+                            <img src="{{ asset('assets/img/logo_light_2.png') }}" width="157" height="40" alt="logo" class="img-fluid">
                         </a>
                     </div>
                 </div>
