@@ -190,7 +190,7 @@
 <!--=   Property     Start              =-->
 <!--=====================================-->
 
-<section class="property-wrap1">
+<section class="property-wrap1" id="my_properties">
     <div class="container">
         <div class="isotope-wrap">
             <div class="row">

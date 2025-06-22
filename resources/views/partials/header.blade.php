@@ -23,27 +23,7 @@
                                 <a href="{{ route('about') }}" class="{{ (Route::is('about')) ? 'active' : '' }}">About</a>
                             </li>
                             <li>
-                                <a href="with-sidebar2.html">Property</a>
-                            </li>
-                            <li class="hide-on-desktop-menu">
-                                <a href="index.html">Pages</a>
-                                <ul>
-                                    <li>
-                                        <a href="about-1.html">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="with-sidebar2.html">Property</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog1.html">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="404.html">404 Error</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('contact') }}">Contact page</a>
-                                    </li>
-                                </ul>
+                                <a href="#my_properties">Property</a>
                             </li>
                             <li>
                                 <a href="{{ route('contact') }}" class="{{ (Route::is('contact')) ? 'active' : '' }}">Contact</a>
